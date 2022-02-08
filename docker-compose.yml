@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      PORT: 8080
+      # Replace you creds with the following
+      # AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+      # AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+      # AWS_DEFAULT_REGION: us-east-1
+      # COGNITO_APP_CLIENT_ID: COGNITO_APP_CLIENT_ID
+      # COGNITO_USER_POOL_ID: COGNITO_USER_POOL_ID
+      # CLIENT_SECRET: No-need
